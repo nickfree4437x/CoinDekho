@@ -47,7 +47,14 @@ A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwi
 
 | Crypto Table | Coin Details Page |
 |--------------|-------------------|
-| ![Table](https://i.imgur.com/xyz123.png) | ![Chart](https://i.imgur.com/abc456.png) |
+
+<img width="1901" height="921" alt="Screenshot (961)" src="https://github.com/user-attachments/assets/395bb387-cd77-4c43-8cf6-5a76a25eaac7" />
+
+<img width="1902" height="916" alt="Screenshot (962)" src="https://github.com/user-attachments/assets/5499eb00-e066-416c-999a-bd534fd67c38" />
+
+<img width="1920" height="916" alt="Screenshot (963)" src="https://github.com/user-attachments/assets/eb4de22b-0940-4165-b6db-670e229b6f51" />
+
+<img width="1920" height="1080" alt="Screenshot (964)" src="https://github.com/user-attachments/assets/5534a62e-6153-4138-a9b0-2267524d9e39" />
 
 ---
 
