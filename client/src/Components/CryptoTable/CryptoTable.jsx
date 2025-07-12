@@ -47,7 +47,7 @@ const CryptoTable = ({ currency }) => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `https://coindekho-backend.onrender.com/api/coins/markets?vs_currency=${currency.toLowerCase()}&order=market_cap_desc&per_page=10&page=1&sparkline=false`
+            `https://coindekho-backend.onrender.com/api/coins?currency=${currency.toLowerCase()}`
         );
         setCoins(res.data);
       } catch (err) {
