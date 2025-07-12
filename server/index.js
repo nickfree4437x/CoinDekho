@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Sample test route
-app.get("/api/test", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "API is working fine 🔥" });
 });
 
