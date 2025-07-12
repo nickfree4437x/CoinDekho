@@ -43,7 +43,7 @@ A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwi
 
 
 # 🔗 Live Demo
-🌐 Frontend: [https://cryptodekho.vercel.app](https://cryptodekho.vercel.app)  
+🌐 Frontend: [https://cryptodekho.vercel.app](https://coin-dekho-five.vercel.app/)  
 🔗 Backend: [https://coindekho-backend.onrender.com](https://coindekho-backend.onrender.com)
 
 
