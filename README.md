@@ -41,6 +41,10 @@ A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwi
 - **Backend Proxy:** Custom Express-based API (`/api/coins`, `/api/history`)  
   *(Hosted on Render.com)*
 
+
+# 🔗 Live Demo
+
+🌐 **[Live URL → https://coin-dekho-five.vercel.app/]
 ---
 
 ## 📸 Screenshots
@@ -63,5 +67,60 @@ A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwi
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/cryptodekho.git
+git clone https://github.com/nickfree4437x/cryptodekho.git
 cd cryptodekho
+
+2. Install Dependencies
+npm install
+
+3. Start the Development Server
+npm run dev
+
+4. Backend API
+This project uses a custom backend as a proxy for CoinGecko:
+/api/coins?currency=usd → returns top 10 coins
+/api/history/:coinId?timeframe=24h → returns historical price data
+API hosted on Render, but you can run locally or host on your own.
+
+🌎 Deployment
+You can deploy this app using:
+Vercel (Recommended)
+Netlify
+GitHub Pages
+Render (for backend)
+
+📁 Folder Structure
+css
+Copy
+Edit
+src/
+├── Components/
+│   ├── CryptoTable/         # Main coin listing
+│   ├── CoinChart/           # Chart and details
+│   └── ...
+├── App.jsx
+├── index.js
+└── assets/
+
+✅ Todo
+ Responsive Design
+ Chart Integration
+ Currency Switching
+ Bookmark Toggle
+ Add Pagination
+ Full Filter Panel UI
+ Login/Signup for saved favorites
+
+🤝 Contribution
+Pull requests are welcome!
+If you have suggestions or bug reports, open an issue.
+
+🙌 Credits
+Data: CoinGecko
+Icons: React Icons
+Charts: Recharts
+
+🧑‍💻 Author
+Made with ❤️ by [Your Name / Vishal Saini]
+📧 Email: vishalsaini5678niwarkhas@gmail.com
+🔗 Portfolio • GitHub • LinkedIn
