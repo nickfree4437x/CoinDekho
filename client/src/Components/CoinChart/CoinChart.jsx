@@ -42,7 +42,7 @@ const CoinChart = ({ coinId, currency }) => {
             minute: '2-digit',
             hour12: true,
           }),
-          price: item.price * rate, // ✅ Convert USD → selected currency
+          price: item.price * rate,
         }));
 
         if (formatted.length > 1) {
@@ -71,20 +71,20 @@ const CoinChart = ({ coinId, currency }) => {
   }
 
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-4 sm:p-6 max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-6">
         <img src={coinInfo.image.large} alt={coinInfo.name} className="w-16 h-16 mx-auto" />
-        <h2 className="text-3xl font-bold text-white mt-2">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mt-2">
           {coinInfo.name} ({coinInfo.symbol.toUpperCase()})
         </h2>
       </div>
 
       {/* Chart Section */}
-      <div className="bg-gradient-to-br from-[#1f1147] to-[#362d73] p-6 rounded-2xl shadow-xl border border-[#50458e]/40">
-        <div className="flex items-center justify-between mb-4">
-          <div className="text-white text-xl font-semibold">Price Chart</div>
-          <div className="flex gap-2">
+      <div className="bg-gradient-to-br from-[#1f1147] to-[#362d73] p-4 sm:p-6 rounded-2xl shadow-xl border border-[#50458e]/40">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
+          <div className="text-white text-lg sm:text-xl font-semibold">Price Chart</div>
+          <div className="flex flex-wrap gap-2 justify-center sm:justify-end">
             {["24h", "7d", "30d", "90d"].map((time) => (
               <button
                 key={time}
@@ -101,9 +101,9 @@ const CoinChart = ({ coinId, currency }) => {
           </div>
         </div>
 
-        <div className="h-64 md:h-80">
+        <div className="h-[300px] sm:h-[400px]">
           <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={history} margin={{ top: 10, right: 15, bottom: 10, left: 10 }}>
+            <AreaChart data={history} margin={{ top: 10, right: 15, bottom: 10, left: 0 }}>
               <defs>
                 <linearGradient id="priceGradient" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#8a2be2" stopOpacity={0.8} />
@@ -153,11 +153,11 @@ const CoinChart = ({ coinId, currency }) => {
       </div>
 
       {/* Coin Details */}
-      <div className="mt-8 bg-gradient-to-br from-[#1e1a3f] to-[#2f2961] text-white rounded-xl shadow-lg p-6 border border-[#3f3b69]/50">
+      <div className="mt-6 sm:mt-8 bg-gradient-to-br from-[#1e1a3f] to-[#2f2961] text-white rounded-xl shadow-lg p-4 sm:p-6 border border-[#3f3b69]/50">
         <h3 className="text-lg font-semibold mb-4">Coin Details</h3>
-        <div className="space-y-2 text-sm">
+        <div className="space-y-2 text-sm sm:text-base">
           <div className="flex justify-between border-b border-[#3f3b69] pb-2">
-            <span>Crypto Market Rank</span>
+            <span>Market Rank</span>
             <span>{coinInfo.market_cap_rank}</span>
           </div>
           <div className="flex justify-between border-b border-[#3f3b69] pb-2">
