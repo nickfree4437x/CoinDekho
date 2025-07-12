@@ -1,4 +1,4 @@
-# 💰 CryptoDekho - React Crypto Tracker
+# 💰 CryptoDekho - Crypto Tracker
 
 A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwind CSS**, **Recharts**, and **CoinGecko API**. The app shows live price data, market cap, 24h change %, and detailed price charts for the top cryptocurrencies. Includes powerful features like **search**, **filtering**, **sorting**, **bookmarking**, and **multi-currency support** (INR, USD, EUR, JPY, etc.).
 
