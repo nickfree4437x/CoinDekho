@@ -30,7 +30,7 @@ const CoinChart = ({ coinId, currency }) => {
         setLoading(true);
 
         const [chartRes, infoRes] = await Promise.all([
-          axios.get(`http://localhost:5000/api/history/${coinId}?timeframe=${timeframe}`),
+          axios.get(`https://coindekho-backend.onrender.com/api/history/${coinId}?timeframe=${timeframe}`),
           axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`)
         ]);
 
