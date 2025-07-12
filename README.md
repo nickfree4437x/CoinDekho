@@ -44,7 +44,24 @@ A sleek and responsive cryptocurrency tracker built using **React.js**, **Tailwi
 
 # 🔗 Live Demo
 
-🌐 **[Live URL → https://coin-dekho-five.vercel.app/]
+🌐 [Live URL → https://coin-dekho-five.vercel.app/]
+🌐 Frontend: [https://cryptodekho.vercel.app](https://cryptodekho.vercel.app)  
+🔗 Backend: [https://coindekho-backend.onrender.com](https://coindekho-backend.onrender.com)
+
+
+## ⏰ How the Cron Job Works
+
+To keep the data up-to-date, a cron job is set on the **backend server** which:
+
+- Fetches live coin market data from the CoinGecko API
+- Stores it in memory and serves through API routes like:
+  - `/api/coins?currency=usd`
+  - `/api/history/:coinId?timeframe=24h`
+- Auto-updates data **every 30 minutes**
+- Also, the **frontend** fetches new data at 30-minute intervals using `setInterval`
+
+This ensures that users always see the latest prices, charts, and market caps even if the app is left idle.
+
 ---
 
 ## 📸 Screenshots
